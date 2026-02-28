@@ -26,12 +26,16 @@ You can view the demo [here](https://drive.google.com/file/d/1xiL7k3d7-w0yAFbiE2
    cd tunitales
    ```
    
-1. **Create a .env file in the python directory and add your environment variables.**
+2. **Create a .env file in the python directory and add your environment variables.**
    ```bash
    GEMINI_API_KEY=your_api_key_here
    ```
-   
-3. **Install dependencies**
+
+3. **Add your Google Cloud Text-to-Speech service account key.**
+   - Place your ttskey.json file in python/app/utils/
+   - This file is required for the voice narration feature
+
+4. **Install dependencies**
    ```bash
    npm install
    ```
