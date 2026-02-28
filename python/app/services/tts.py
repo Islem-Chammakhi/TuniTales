@@ -2,8 +2,8 @@ from google.cloud import texttospeech
 from google.api_core.exceptions import GoogleAPICallError, RetryError
 import os
 
-# Définir la variable d'environnement vers le fichier JSON
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "app/utils/tts-key.json"
+# Define the environment variable pointing to the JSON file for Google Cloud credentials
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "app/utils/ttskey.json"
 
 def synthesize_ssml(ssml_text: str, language_code: str, voice_name: str = None):
     try:

@@ -70,7 +70,7 @@ export default function Discover() {
           transition={{ duration: 0.5 }}
           className="relative"
         >
-          <div className="container mx-auto px-6 py-16 lg:py-24">
+          <div className="container mx-auto px-8 lg:px-24 py-16 lg:py-24">
             {/* Writing */}
             <div className="text-center mb-12">
               <motion.h1
@@ -95,31 +95,16 @@ export default function Discover() {
             </div>
 
             {/* Content */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
               {/* UPLOAD PICTURE */}
-              <motion.div
-                initial={{ x: -50, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ delay: 0.4 }}
-              >
-                <PhotoUpload
-                  onImageUpload={handleImageUpload}
-                  isLoading={isRecognizing}
-                />
+              <motion.div initial={{ x: -50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ delay: 0.4 }} className="flex flex-col h-full">
+                <PhotoUpload onImageUpload={handleImageUpload} isLoading={isRecognizing} />
               </motion.div>
 
               {/* RESULT */}
-              <motion.div
-                initial={{ x: 50, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ delay: 0.6 }}
-              >
-                <RecognitionResult
-                  result={recognitionResult}
-                  isLoading={isRecognizing}
-                />
+              <motion.div initial={{ x: 50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ delay: 0.6 }} className="flex flex-col h-full">
+                <RecognitionResult result={recognitionResult} isLoading={isRecognizing} />
               </motion.div>
-              
             </div>
           </div>
         </motion.div>

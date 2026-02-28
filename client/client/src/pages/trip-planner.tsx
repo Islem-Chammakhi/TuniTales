@@ -1,16 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import {
-  ChevronLeft,
-  ChevronRight,
-  MapPin,
-  Calendar,
-  Wallet,
-  Car,
-  Clock,
-  User,
-  Loader2,
-} from "lucide-react";
+import { ChevronLeft, ChevronRight, MapPin, Calendar, Wallet, Car, Clock, User, Loader2, } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import InterestsStep from "@/components/questionnaire/InterestsStep";
@@ -164,7 +154,7 @@ const TravelQuestionnaire = () => {
     <div className="relative">
       <PatternBackground />
 
-      <div className="min-h-screen container mx-auto px-6 py-16 lg:py-20 relative z-10">
+      <div className="min-h-screen container mx-auto px-4 py-16 lg:py-24 relative z-10">
         {/* Header */}
         <AnimatePresence mode="wait">
           <motion.div
@@ -304,18 +294,10 @@ const TravelQuestionnaire = () => {
               key="result"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{
-                type: "spring",
-                stiffness: 100,
-                damping: 10,
-              }}
-              className="max-w-5xl mx-auto"
+              transition={{ type: "spring", stiffness: 100, damping: 10, }}
+              className="max-w-7xl mx-auto"
             >
-              <TravelResult
-                formData={formData}
-                onStartOver={startOver}
-                data={result}
-              />
+              <TravelResult formData={formData} onStartOver={startOver} data={result} />
             </motion.div>
           )}
         </AnimatePresence>

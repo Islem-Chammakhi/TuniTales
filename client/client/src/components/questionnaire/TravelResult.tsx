@@ -72,7 +72,7 @@ const TravelResult: React.FC<TravelResultProps> = ({
       transition={{ duration: 0.8, ease: "easeOut" }}
       className="container mx-auto px-4 py-8"
     >
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
 
 
         {/* Main Result Card */}
@@ -94,7 +94,7 @@ const TravelResult: React.FC<TravelResultProps> = ({
                 <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-transparent" />
               </div>
               <div className="p-6 text-gray-800 mt-2">
-                <h2 className="text-2xl md:text-3xl font-bold mb-2 text-orange-700">
+                <h2 className="underline text-2xl md:text-3xl font-bold mb-2 text-orange-700">
                   {data?.destination}
                 </h2>
                 <p className="text-lg">{data?.description}</p>
@@ -102,7 +102,7 @@ const TravelResult: React.FC<TravelResultProps> = ({
             </div>
 
             {/* Content */}
-            <div className="px-6 pb-8">
+            <div className="px-8 pb-8">
               {/* Key Details Grid */}
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
 

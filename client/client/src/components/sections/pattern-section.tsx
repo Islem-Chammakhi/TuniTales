@@ -4,7 +4,7 @@ import { Link } from "wouter";
 
 export default function PatternSection() {
   return (
-    <section className="py-16 bg-white relative">
+    <section className="lg:px-14 py-16 bg-white relative">
       <div className="container mx-auto px-6 lg:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -27,7 +27,7 @@ export default function PatternSection() {
               <motion.div
                 whileHover={{ borderColor: "#D97706" }}
                 transition={{ duration: 0.3 }}
-                className="bg-sand rounded-lg p-4 border border-transparent"
+                className="bg-sand rounded-lg p-6 border border-transparent"
               >
                 <div className="bg-terracotta/10 rounded-full w-12 h-12 flex items-center justify-center mb-3">
                   <svg
@@ -45,7 +45,7 @@ export default function PatternSection() {
                     />
                   </svg>
                 </div>
-                <h3 className="font-medium font-el-messiri text-terracotta mb-1">
+                <h3 className="font-bold text-lg font-el-messiri text-terracotta mb-1">
                   Geometric Patterns
                 </h3>
                 <p className="text-sm text-dark-brown/70">
@@ -57,7 +57,7 @@ export default function PatternSection() {
               <motion.div
                 whileHover={{ borderColor: "#3B82F6" }}
                 transition={{ duration: 0.3 }}
-                className="bg-sand rounded-lg p-4 border border-transparent"
+                className="bg-sand rounded-lg p-6 border border-transparent"
               >
                 <div className="bg-azure-blue/10 rounded-full w-12 h-12 flex items-center justify-center mb-3">
                   <svg
@@ -75,7 +75,7 @@ export default function PatternSection() {
                     />
                   </svg>
                 </div>
-                <h3 className="font-medium font-el-messiri text-azure-blue mb-1">
+                <h3 className="font-bold text-lg font-el-messiri text-azure-blue mb-1">
                   Colorful Mosaics
                 </h3>
                 <p className="text-sm text-dark-brown/70">
@@ -86,7 +86,7 @@ export default function PatternSection() {
               <motion.div
                 whileHover={{ borderColor: "#4B5563" }}
                 transition={{ duration: 0.3 }}
-                className="bg-sand rounded-lg p-4 border border-transparent"
+                className="bg-sand rounded-lg p-6 border border-transparent"
               >
                 <div className="bg-olive-green/10 rounded-full w-12 h-12 flex items-center justify-center mb-3">
                   <svg
@@ -104,7 +104,7 @@ export default function PatternSection() {
                     />
                   </svg>
                 </div>
-                <h3 className="font-medium font-el-messiri text-olive-green mb-1">
+                <h3 className="font-bold text-lg font-el-messiri text-olive-green mb-1">
                   Floral Motifs
                 </h3>
                 <p className="text-sm text-dark-brown/70">
@@ -115,7 +115,7 @@ export default function PatternSection() {
               <motion.div
                 whileHover={{ borderColor: "#D97706" }}
                 transition={{ duration: 0.3 }}
-                className="bg-sand rounded-lg p-4 border border-transparent"
+                className="bg-sand rounded-lg p-6 border border-transparent"
               >
                 <div className="bg-terracotta/10 rounded-full w-12 h-12 flex items-center justify-center mb-3">
                   <svg
@@ -133,7 +133,7 @@ export default function PatternSection() {
                     />
                   </svg>
                 </div>
-                <h3 className="font-medium font-el-messiri text-terracotta mb-1">
+                <h3 className="font-bold text-lg font-el-messiri text-terracotta mb-1">
                   Berber Symbols
                 </h3>
                 <p className="text-sm text-dark-brown/70">
@@ -144,28 +144,13 @@ export default function PatternSection() {
           </motion.div>
 
           <motion.div
-            className="grid grid-cols-2 gap-4"
+            className="columns-2 gap-4 space-y-4"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            {/* Pattern 1: Traditional Tunisian mosaic pattern */}
-            <motion.img
-              src="https://i.etsystatic.com/25539663/r/il/104f65/3174558696/il_fullxfull.3174558696_6qaa.jpg"
-              className="rounded-lg shadow-md w-full h-auto hover-card"
-              whileHover={{ y: -5, transition: { duration: 0.2 } }}
-            />
-
-            {/* Pattern 2: Tunisian zellige tilework */}
-            <motion.img
-              src="https://tunisie.co/uploads/images/content/zellige-120421-1.jpg"
-              alt="Detailed Tunisian zellige tilework"
-              className="rounded-lg shadow-md w-full h-auto mt-8 hover-card"
-              whileHover={{ y: -5, transition: { duration: 0.2 } }}
-            />
-
-            {/* Pattern 3: Carved wooden door */}
+            {/* Pattern 4: Carved wooden door */}
             <motion.img
               src="https://www.traveladventures.org/countries/tunisia/images/tunisian-doors01.jpg"
               alt="Intricate carved wooden door with Tunisian patterns"
@@ -173,11 +158,26 @@ export default function PatternSection() {
               whileHover={{ y: -5, transition: { duration: 0.2 } }}
             />
 
-            {/* Pattern 4: Ceramic pottery */}
+            {/* Pattern 2: Ceramic pottery */}
             <motion.img
               src="https://i.pinimg.com/originals/5b/89/a9/5b89a95a5249fab91715a2f61efe64c7.jpg"
               alt="Colorful ceramic pottery with traditional Tunisian designs"
               className="rounded-lg shadow-md w-full h-auto mt-8 hover-card"
+              whileHover={{ y: -5, transition: { duration: 0.2 } }}
+            />
+
+            {/* Pattern 3: Tunisian zellige tilework */}
+            <motion.img
+              src="https://tunisie.co/uploads/images/content/zellige-120421-1.jpg"
+              alt="Detailed Tunisian zellige tilework"
+              className="rounded-lg shadow-md w-full h-auto mt-8 hover-card"
+              whileHover={{ y: -5, transition: { duration: 0.2 } }}
+            />
+
+            {/* Pattern 1: Traditional Tunisian mosaic pattern */}
+            <motion.img
+              src="https://i.etsystatic.com/25539663/r/il/104f65/3174558696/il_fullxfull.3174558696_6qaa.jpg"
+              className="rounded-lg shadow-md w-full h-auto hover-card"
               whileHover={{ y: -5, transition: { duration: 0.2 } }}
             />
           </motion.div>

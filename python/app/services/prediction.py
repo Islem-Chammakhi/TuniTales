@@ -4,7 +4,7 @@ import numpy as np
 from tensorflow.keras.applications.efficientnet import preprocess_input
 from io import BytesIO
 
-# Charger le modèle (au démarrage de l'app)
+# Load the model (on app launch)
 model = load_model("app/models_ai/model_EfficientNetB0_1.h5",compile=False)
 
 class_names = [

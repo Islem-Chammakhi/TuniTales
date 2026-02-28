@@ -58,7 +58,7 @@ export default function PhotoUpload({ onImageUpload, isLoading }: PhotoUploadPro
 
 
   return (
-    <div className="bg-[#fff8eb] rounded-2xl p-8 lg:py-14 lg:px-10 shadow-lg">
+    <div className="bg-[#fff8eb] rounded-2xl p-8 lg:py-14 lg:px-10 shadow-lg h-full">
       <div className="flex flex-col items-center text-center">
         <h2 className="text-2xl font-bold font-el-messiri text-dark-brown mb-4">
           Try Monument Recognition

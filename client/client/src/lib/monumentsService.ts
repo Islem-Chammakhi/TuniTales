@@ -1,6 +1,6 @@
 import { Monument, RecognitionResult } from "../types/monument";
 import { monumentsData, recognizedMonuments } from "../data/monuments";
-import axios from "../lib/axios";
+import axios from "./axios";
 
 // Simulated delay to mimic API calls
 const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));

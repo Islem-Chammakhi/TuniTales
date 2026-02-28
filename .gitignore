@@ -35,4 +35,4 @@ python/app/__pycache__/
 
 # Environment variables
 *.env
-python/app/utils/tts-key.json
+python/app/utils/ttskey.json

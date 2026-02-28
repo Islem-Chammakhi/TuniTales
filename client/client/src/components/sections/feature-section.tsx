@@ -45,7 +45,7 @@ export default function FeatureSection() {
   };
 
   return (
-    <section id="discover" className="relative py-16 lg:py-24 bg-white">
+    <section id="discover" className="relative lg:px-14 py-20 lg:py-24 bg-white">
       <div
         className="absolute top-0 left-0 w-full h-16 bg-sand"
         style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 0)" }}

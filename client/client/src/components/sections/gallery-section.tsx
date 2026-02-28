@@ -43,7 +43,7 @@ export default function GallerySection() {
   };
 
   return (
-    <section id="monuments" className="py-16 lg:py-24 relative">
+    <section id="monuments" className="lg:px-14 py-16 lg:py-24 relative">
       <div className="absolute inset-0 mosaic-bg"></div>
 
       <div className="container mx-auto px-6 lg:px-16 relative z-10">

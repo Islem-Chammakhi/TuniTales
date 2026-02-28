@@ -21,7 +21,7 @@ export default function HeroSection() {
       id="home"
       className="relative min-h-[90vh] flex items-center overflow-hidden"
     >
-      <div className="container mx-auto px-6 py-12 lg:px-16 relative z-10">
+      <div className="container mx-auto px-10 py-12 lg:px-14 xl:px-32 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
             className="space-y-6"

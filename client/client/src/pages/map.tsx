@@ -58,7 +58,7 @@ export default function MapPage() {
       <div className="relative">
         <PatternBackground />
 
-        <div className="container mx-auto px-6 py-16 lg:py-24 relative z-10">
+        <div className="container mx-auto px-8 lg:px-24 py-16 lg:py-24 relative z-10">
           <motion.div
             className="text-center mb-12"
             initial={{ y: -20, opacity: 0 }}
